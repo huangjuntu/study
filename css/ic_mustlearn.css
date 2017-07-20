@@ -1,41 +1,55 @@
-
-body,html{
+body,
+html {
 	height: 100% !important;
 }
-#content .header_mustlearn{
-	background: #F2F3F5;
-	height: 8%;
-	
+
+#content .header_mustlearn {
+    background: #F2F3F5;
+    height: 4rem;
+    line-height: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
-#content .header_mustlearn span{
+
+#content .header_mustlearn span {
 	float: right;
 	display: block;
 	padding: 4% 0.7rem 3% 0.7rem;
 }
-#content .header_mustlearn span:nth-child(1){
+
+#content .header_mustlearn span:nth-child(1) {
 	float: left;
 }
 
-#content .header_mustlearn span:nth-child(1):after{
-    display: inline-block;
-    width: 0.6rem;
-    height: 0.4rem;
-    margin-left: 0.1rem;
-    content: "";
-    background: url(../img/arrow.png) no-repeat;
-    background-size: 100% 100%;
-    vertical-align: middle;
+#content .header_mustlearn span:nth-child(1):after {
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.4rem;
+	margin-left: 0.1rem;
+	content: "";
+	background: url(../img/arrow.png) no-repeat;
+	background-size: 100% 100%;
+	vertical-align: middle;
 }
-#content .header_mustlearn span:nth-child(4){
+#content .video_mustlearn{
+	margin-top: 5rem;
+}
+
+#content .header_mustlearn span:nth-child(4) {
 	/*color: #47A9F5;*/
 }
-#content .video_mustlearn .vide_mustlearn1{
+
+/*#content .video_mustlearn .vide_mustlearn1 {
 	height: 13rem;
-    margin: 1rem;
-    margin-bottom: 0;
-        background: #767676;
-}
-#content .video_mustlearn .ic_mustlearn_title{
+	margin: 1rem;
+	margin-bottom: 0;
+	background: #767676;
+}*/
+
+#content .video_mustlearn .ic_mustlearn_title {
 	height: 2rem;
 	line-height: 2rem;
 }
@@ -49,43 +63,48 @@ body,html{
 	float: right;
 	padding-right: 1rem;
 }
-#content .video_mustlearn .vide_mustlearn2{
+
+#content .video_mustlearn .vide_mustlearn2 {
 	height: 13rem;
-    margin: 1rem;
-    margin-bottom: 0;
-        background: #767676;
+	margin: 1rem;
+	margin-bottom: 0;
+	background: #767676;
 }
-#content .content_mustlearn{
+
+#content .content_mustlearn {
 	width: 100%;
 	height: 90%;
-}
-#content .content_mustlearn .cx_left{
-    float: left;
-    width: 30%;
-    height: 100%;
-    background: #EEEEEE;
-    text-align: center;
-}
-#content .content_mustlearn .cx_left ul li{
-list-style: none;
-    padding: 0.7rem 0 ;
-    border-top: 1px solid #E1E1E1;
-    /*background: pink;*/
-    display: block;
+	margin-top: 4rem;
 }
 
-#content .content_mustlearn .cx_right{
-    float: left;
-    width: 70%;
-    height: 100%;
-  
+#content .content_mustlearn .cx_left {
+	float: left;
+	width: 30%;
+	height: 100%;
+	background: #EEEEEE;
+	text-align: center;
 }
 
-#content .content_mustlearn .cx_right div{
-    width: 100%;
-    height: 100%;
-}    
-    
+#content .content_mustlearn .cx_left ul li {
+	list-style: none;
+	padding: 0.7rem 0;
+	border-top: 1px solid #E1E1E1;
+	/*background: pink;*/
+	display: block;
+}
+
+#content .content_mustlearn .cx_right {
+	float: left;
+	width: 70%;
+	height: 100%;
+}
+
+#content .content_mustlearn .cx_right div {
+	width: 100%;
+	height: 100%;
+}
+
+
 /*#content .content_mustlearn .cx_right div span{
 text-align: left;
     display: block;
@@ -96,22 +115,82 @@ text-align: left;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
 }  */
-#content .content_mustlearn .cx_right div ul{
+
+#content .content_mustlearn .cx_right div ul {
 	margin-left: 1rem;
 }
-#content .content_mustlearn .cx_right div ul li{
-    list-style: none;
-    padding: 0.7rem 0rem;
+
+#content .content_mustlearn .cx_right div ul li {
+	list-style: none;
+	padding: 0.7rem 0rem;
+	float: left;
+	width: 45%;
+	color: #5E5E5E;
+	font-size: 0.9rem;
+}
+
+#content .content_mustlearn .cx_right div ul li span {
+	/*background: #F5F5F5;*/
+	padding: 0.1rem 0.2rem;
+	border-radius: 0.4rem;
+}
+
+
+/*以下是开始*/
+    
+.course-item {
     float: left;
-    width: 45%;
-    color: #5E5E5E;
+    position: relative;
+    width: 48%;
+    height: 10rem;
+    margin-left: .32rem;
+    margin-bottom: 0.8rem;
+    box-shadow: 0 0 10px 0 rgba(7, 17, 27, .1);
+    color: #2b333b;
+}
+.js-imooc-list{
+	margin-top: .32rem;
+}
+
+.course-item a {
+display: block;
+    height: 100%;
+    color: inherit;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.course-item .surface {
+	width: 100%;
+	height: 2.53333333rem;
+	vertical-align: middle;
+}
+.course-item .surface {
+    width: 100%;
+    height: 60%;
+    vertical-align: middle;
+}
+.course-item .desc-box {
+    position: relative;
+    margin-top: 0.4rem;
+    margin-left: 0.32rem;
+    margin-right: 0.32rem;
+}
+.course-item .desc-box .h2 {
     font-size: 0.9rem;
 }
-#content .content_mustlearn .cx_right div ul li span{
-    /*background: #F5F5F5;*/
-    padding: 0.1rem 0.2rem;
-    border-radius: 0.4rem;
-}  
-/*.cls{
-	color: #47A9F5;
-}*/
+.course-item .desc-box .detail {
+   font-size: 0.5rem;
+    margin-top: 0.5rem;
+}
+.desc-box .person-num em {
+    margin-left: .06666667rem;
+    margin-right: .06666667rem;
+}
+em {
+    font-style: normal;
+}
+.course-item .desc-box .person-num {
+    color: #b7bbbf;
+}

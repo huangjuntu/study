@@ -4,6 +4,7 @@ $(function() {
 
 	//	当点击“学习中”，索引index为0，或者“已完成”，索引index为1
 	//begin
+	$(".type_learning").css("border-bottom", "2px solid #45A8F5");
 	$(".learn_news div").on("click", function() {
 		var xx = $(this).index();
 		var learn_color = "2px solid #45A8F5";
