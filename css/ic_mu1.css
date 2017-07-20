@@ -1,0 +1,108 @@
+*{
+	padding:0;
+	margin: 0;
+}
+#content_big .header {
+	z-index: 999;
+	position: fixed;
+	top: 0%;
+	height: 17rem;
+	width: 100%;
+	margin-left: -50%;
+	left: 50%;
+	border-bottom: 1px solid #3F3F3F
+}
+#content_big #header .iframe_pdf{
+	width: 100%;
+	height: 100%;
+}
+#content_big .big1 {
+	position: fixed;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	margin-left: -50%;
+	left: 50%
+}
+#content_big #header .big_small{
+	position: fixed;
+    margin: 2px 2px 3px 0;
+    float: right;
+    right: 26px;
+    min-width: 16px;
+    border: 1px solid transparent;
+    color: hsla(0,0%,100%,.8);
+    font-size: 12px;
+    line-height: 26px;
+    background: none;
+    width: 32px;
+    height: 26px;
+}
+
+#content_big .course-container {
+	margin-top: 20rem;
+	height: 50rem;
+	width: 100%;
+}
+
+.tabbox {
+	width: 100%;
+/*	height: 140px;*/
+	background: #f0f0f0;
+	font-family: '微软雅黑';
+}
+
+.tab {
+	overflow: hidden;
+	background: #ccc;
+	
+
+}
+
+.tab a {
+    display: block;
+    padding: 10px 2%;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    color: #333;
+    margin: 0 6%;
+    width: 9%;
+}
+
+
+/*.tabbox .tab a:hover {
+	background: #E64E3F;
+	color: #fff;
+	text-decoration: none;
+}*/
+.tab a.on {
+	border-bottom: 2px solid #45A8F5;
+	/*color: #fff;*/
+	text-decoration: none;
+}
+
+.tabbox .content {
+	overflow: hidden;
+	width: 100%;
+	height: 100px;
+	position: relative;
+	margin-top: 19rem;
+}
+
+.tabbox .content ul {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100px;
+}
+
+.tabbox .content li {
+	width: 500px;
+	height: 100px;
+	float: left;
+}
+
+.tabbox .content li p {
+	padding: 10px;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+		<title>选学课程</title>
+		<link href="css/index.css" rel="stylesheet" />
+		<link href="css/ic_xuan.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="content">
+
+			<!--选学课程导航栏begin-->
+			<div class="header_xuan">
+				<span class="all">全部 </span>
+				<span class="choose">最热</span>
+				<span class="choose">最新</span>
+				<span class="choose">智能排序</span>
+			</div>
+			<!--选学课程导航栏end-->
+
+			<!--清除浮动-->
+			<div style="clear:both"></div>
+
+			<!--点击all按钮后显示-区域1（默认显示）begin-->
+			<div class="video_xuan">
+				<!--第一个视频-->
+				<div class="vide_xuan1">
+					<video id="ee" width="100%" height="100%" style="object-fit: fill" poster="img/study.png" controls>
+						<source src="mp4/movie.mp4" type="video/mp4">
+						<source src="mp4/movie.ogg" type="video/ogg"> 您的浏览器不支持 video 标签。
+					</video>
+				</div>
+				<div class="ic_xuan_title">
+					<span>Test</span>
+					<span>学习中</span>
+				</div>
+				<!--第二个视频-->
+				<div class="vide_xuan2">
+					<video width="100%" height="100%" style="object-fit: fill" controls>
+						<source src="mp4/movie.mp4" type="video/mp4">
+						<source src="mp4/movie.ogg" type="video/ogg"> 您的浏览器不支持 video 标签。
+					</video>
+				</div>
+				<div class="ic_xuan_title">
+					<span>Test</span>
+					<span>学习中</span>
+				</div>
+			</div>
+			<!--点击all按钮后显示-区域1end-->
+
+			<!--点击all按钮后显示-区域2（默认隐藏）begin-->
+			<div class="content_xuan" style="display: none;">
+				<div class="cx_left">
+					<ul>
+						<li>内部学习</li>
+						<li>市场营销</li>
+						<li>职业发展</li>
+						<li>管理艺术</li>
+						<li>办事效率</li>
+					</ul>
+				</div>
+
+				<div class="cx_right">
+					<div>
+						<ul>
+							<li><span>全部</span></li>
+						</ul>
+						<span></span>
+					</div>
+					<div style="display: none;">
+						<ul>
+							<li><span>全部</span></li>
+							<li><span>互联网营销</li>
+							<li><span>营销战略</li>
+							<li><span>渠道管理</li>
+							<li><span>品牌管理</li>
+						</ul>
+					</div>
+					<div style="display: none;">
+						<ul>
+							<li><span>全部</span></li>
+							<li><span>职业规划</li>
+							<li><span>商务礼仪</span></li>
+							<li><span>知识管理</span></li>
+							<li><span>情绪管理</span></li>
+							<li><span>习惯养成</span></li>
+							<li><span>人际沟通</span></li>
+						</ul>
+					</div>
+					<div style="display: none;">
+						<ul>
+							<li><span>全部</span></li>
+							<li><span>项目管理</span></li>
+							<li><span>领导力培养</span></li>
+							<li><span>目标管理</span></li>
+							<li><span>团队管理</span></li>
+						</ul>
+					</div>
+					<div style="display: none;">
+						<ul>
+							<li><span>全部</span></li>
+							<li><span>办公软件</span></li>
+							<li><span>领导力培养</span></li>
+							<li><span>工作效率</span></li>
+							<li><span>电脑基础</span></li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="cx_bottom">
+					<a href="javascript:void(0)" class="btn_left" id="reset">重置</a>
+					<a href="javascript:void(0)" class="btn_right" id="submit">确定</a>
+				</div>
+			</div>
+			<!--点击all按钮后显示-区域2end-->
+
+			<a href="index.html" style="position: absolute;width: 7rem;height: 3rem;line-height:3rem;
+			text-align:center;right: 0; bottom: 0; background: pink; display: block;">点击回到首页</a>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/ic_xuan.js"></script>
+		
+	</body>
+
+</html>
