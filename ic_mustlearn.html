@@ -4,12 +4,11 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
-		<title>选学课程</title>
+		<title>必学课程</title>
 		<link href="css/index.css" rel="stylesheet" />
-		<link href="css/ic_mustlearn.css" rel="stylesheet" />
 	</head>
 
-	<body>
+	<body class="must_height">
 		<div id="content">
 			<div class="header_mustlearn">
 				<span class="all">全部 </span>
@@ -18,14 +17,14 @@
 				<span class="choose">智能排序</span>
 			</div>
 
-			<div class="video_mustlearn">
+			<div class="video_mustlearn video_xu_mu">
 				<!--这里面是必学课的课程开始-->
-				<ul class="imooc-list js-imooc-list clearfix">
+				<ul class="mustlearn_list">
 
-					<li class="course-item">
+					<li class="course_item">
 
 						<a href="ic_mu1.html">
-							<img data-original="http://img.mukewang.com/529dc3380001379906000338-228-128.jpg" class="surface lazy" src="http://img.mukewang.com/529dc3380001379906000338-228-128.jpg" style="display: inline;">
+							<img class="surface" src="http://img.mukewang.com/529dc3380001379906000338-228-128.jpg" style="display: inline;">
 							<div class="desc-box">
 								<p class="h2">HTML+CSS基础课程</p>
 								<p class="detail clearfix">
@@ -35,10 +34,10 @@
 						</a>
 					</li>
 
-					<li class="course-item">
+					<li class="course_item">
 
 						<a href="http://www.baidu.com">
-							<img data-original="http://img.mukewang.com/53e1d0470001ad1e06000338-228-128.jpg" class="surface lazy" src="http://img.mukewang.com/53e1d0470001ad1e06000338-228-128.jpg" style="display: inline;">
+							<img class="surface" src="http://img.mukewang.com/53e1d0470001ad1e06000338-228-128.jpg" style="display: inline;">
 							<div class="desc-box">
 								<p class="h2">JavaScript入门篇</p>
 								<p class="detail clearfix">
@@ -48,75 +47,13 @@
 						</a>
 					</li>
 
-					<li class="course-item">
-
-						<a href="ic_mu1.html">
-							<img data-original="http://img.mukewang.com/57035ff200014b8a06000338-228-128.jpg" class="surface lazy" src="http://img.mukewang.com/57035ff200014b8a06000338-228-128.jpg" style="display: inline;">
-							<div class="desc-box">
-								<p class="h2">Java入门第一季</p>
-								<p class="detail clearfix">
-									<span class="person-num">初级<em>·</em>694821人学习</span>
-								</p>
-							</div>
-						</a>
-					</li>
-					<li class="course-item">
-
-						<a href="http://www.imooc.com/learn/54">
-							<img data-original="http://img.mukewang.com/53daee770001dd0706000338-228-128.jpg" class="surface lazy" src="http://img.mukewang.com/53daee770001dd0706000338-228-128.jpg" style="display: inline;">
-							<div class="desc-box">
-								<p class="h2">PHP入门篇</p>
-								<p class="detail clearfix">
-									<span class="person-num">初级<em>·</em>339149人学习</span>
-								</p>
-							</div>
-						</a>
-					</li>
-
-					<li class="course-item">
-
-						<a href="ic_mu1.html">
-							<img data-original="http://img.mukewang.com/53bf89100001684e06000338-228-128.jpg" class="surface lazy" src="http://img.mukewang.com/53bf89100001684e06000338-228-128.jpg" style="display: inline;">
-							<div class="desc-box">
-								<p class="h2">Android攻城狮的第一门课</p>
-								<p class="detail clearfix">
-									<span class="person-num">初级<em>·</em>265348人学习</span>
-								</p>
-							</div>
-						</a>
-					</li>
-
-					<li class="course-item">
-
-						<a href="ic_mu1.html">
-							<img data-original="http://img.mukewang.com/570779ba00011eac06000338-228-128.jpg" class="surface lazy" src="http://img.mukewang.com/570779ba00011eac06000338-228-128.jpg" style="display: inline;">
-							<div class="desc-box">
-								<p class="h2">使用Swift开发iOS8 App实战</p>
-								<p class="detail clearfix">
-									<span class="person-num">高级<em>·</em>58109人学习</span>
-								</p>
-							</div>
-						</a>
-					</li>
-					<li class="course-item">
-
-						<a href="ic_mu1.html">
-							<img data-original="http://img.mukewang.com/570779ba00011eac06000338-228-128.jpg" class="surface lazy" src="http://img.mukewang.com/570779ba00011eac06000338-228-128.jpg" style="display: inline;">
-							<div class="desc-box">
-								<p class="h2">使用Swift开发iOS8 App实战</p>
-								<p class="detail clearfix">
-									<span class="person-num">高级<em>·</em>58109人学习</span>
-								</p>
-							</div>
-						</a>
-					</li>
 
 				</ul>
 				<!--必学课的课程结束-->
 			</div>
 
-			<div class="content_mustlearn" style="display: none;">
-				<div class="cx_left">
+			<div class="content_mustlearn contetn_xu_mu" style="display: none;">
+				<div class="cx_left cx_cm_left">
 					<ul>
 						<li>内部学习</li>
 						<li>市场营销</li>
@@ -126,7 +63,7 @@
 					</ul>
 				</div>
 
-				<div class="cx_right">
+				<div class="cx_right cx_cm_left">
 					<div>
 						<ul>
 							<li><span>全部</span></li>
@@ -173,13 +110,15 @@
 					</div>
 
 				</div>
+				<div class="cm_bottom cx_cm_bottom">
+					<a href="javascript:void(0)" class="btn_left" id="reset">重置</a>
+					<a href="javascript:void(0)" class="btn_right" id="submit">确定</a>
+				</div>
 
 			</div>
 		</div>
-		<a href="index.html" style="position: absolute;width: 7rem;height: 3rem;line-height:3rem;
-			text-align:center;right: 0; bottom: 0; background: pink; display: block;">点击回到首页</a>
 		<script src="js/jquery.min.js"></script>
-		<script src="js/ic_mustlearn.js"></script>
+		<script src="js/index.js"></script>
 	</body>
 
 </html>
