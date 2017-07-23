@@ -1,5 +1,4 @@
 $(function() {
-
 	/*选修课页面的JS与必修课页面JS*/
 
 	//	当点击"全部"按钮时
@@ -106,6 +105,64 @@ $(function() {
 			$(this).css("border-bottom", learn_color);
 			$(".learn_news div").eq(0).css("border-style", "none");
 		}
+	})
+
+	/*详细课程的页面*/
+	//点击放大缩小,pdf变换
+	var screen_height = window.screen.height;
+	var container_height = screen_height * 0.53;
+	$("#content_big .course-container").css("height", container_height);
+
+	var show2 = 0;
+	$(".big_small").on("click", function() {
+		if(show2 == 0) {
+			$("#header").addClass("big1");
+			$(".course-container").css("display", "none");
+			$(".iframe_pdf").css("height", "100%");
+			//$("#header").removeClass("big");
+			$(this).html("缩小");
+			show2 = 1;
+		} else {
+			//$("#header").addClass("big");
+			$(".course-container").css("display", "block");
+			$("#header").removeClass("big1");
+			$(".iframe_pdf").css("height", "16rem");
+			$(this).html("放大");
+			show2 = 0;
+		}
+	})
+
+	//下面的tab滑动效果动画
+	$("#content_big .tab a").on("click", function() {
+		$(".tab a").each(function() {
+			$(this).css("background-color", "#CCCCCC");
+			$(this).removeClass("on");
+		})
+		$(this).css("background-color", "#8EC2D6");
+		$(this).addClass("on");
+
+		var myindex1 = $(this).index();
+		$(".course-container").find(".tabbox").eq(myindex1).css({
+			"display": "block"
+		}).siblings().css({
+			"display": "none"
+		});
+	})
+
+	//点击下面的章节,对应上面的显示互换
+	$(".tabbox li").on("click", function() {
+		var myindex3 = $(this).index();
+		$(".tabbox li").each(function() {
+			$(this).css("background-color", "#F0F0F0");
+		})
+		$(this).css("background-color", "pink");
+
+		var product = $(this).data("product"); //是数字
+		$(".iframe_pdf").find("iframe").eq(product - 1).css({
+			"display": "block"
+		}).siblings().css({
+			"display": "none"
+		});
 	})
 
 })
