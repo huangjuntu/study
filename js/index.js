@@ -119,11 +119,9 @@ $(function() {
 			$("#header").addClass("big1");
 			$(".course-container").css("display", "none");
 			$(".iframe_pdf").css("height", "100%");
-			//$("#header").removeClass("big");
 			$(this).html("缩小");
 			show2 = 1;
 		} else {
-			//$("#header").addClass("big");
 			$(".course-container").css("display", "block");
 			$("#header").removeClass("big1");
 			$(".iframe_pdf").css("height", "16rem");
@@ -151,7 +149,6 @@ $(function() {
 
 	//点击下面的章节,对应上面的显示互换
 	$(".tabbox li").on("click", function() {
-		var myindex3 = $(this).index();
 		$(".tabbox li").each(function() {
 			$(this).css("background-color", "#F0F0F0");
 		})
