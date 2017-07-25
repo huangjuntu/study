@@ -368,6 +368,35 @@ See https://github.com/adobe-type-tools/cmap-resources
   </div>
   <!-- outerContainer -->
   <div id="printContainer"></div>
+  <script src="../js/jquery.min.js"></script>
+  <script>
+  	$(function(){
+  		var screen_height = window.screen.height;
+  		var iframe_pdf_height = screen_height * 0.4;
+  		var show2 = 0;
+  		$("#secondaryPresentationMode").on("click",function(){
+  			if(show2 == 0) {
+			$("#header", parent.document).addClass("big1");
+			$(".course-container", parent.document).css("display", "none");
+			$(".iframe_pdf", parent.document).css("height", "100%");
+			$("#header .tab", parent.document).css("display","none");
+			$(this).html("缩小");
+			show2 = 1;
+		} else {
+			$(".course-container", parent.document).css("display", "block");
+			$("#header", parent.document).removeClass("big1");
+			$(".iframe_pdf", parent.document).css("height", iframe_pdf_height);
+			$("#header .tab", parent.document).css("display","block");
+			$(this).html("扩大");
+			show2 = 0;
+			
+
+	
+	
+		}
+  		})
+  	})
+  </script>
 </body>
 
 </html>

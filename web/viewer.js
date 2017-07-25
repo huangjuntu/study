@@ -924,8 +924,8 @@ var pdfjsWebLibs;
        this.outlineButton.classList.add('toggled');
        this.attachmentsButton.classList.remove('toggled');
        this.thumbnailView.classList.add('hidden');
-       this.outlineView.classList.remove('hidden');
-       this.attachmentsView.classList.add('hidden');
+       this.outlineView.classList.remove('content_co');
+       this.attachmentsView.classList.add('content_co');
        break;
       case SidebarView.ATTACHMENTS:
        if (this.attachmentsButton.disabled) {
@@ -934,7 +934,7 @@ var pdfjsWebLibs;
        this.thumbnailButton.classList.remove('toggled');
        this.outlineButton.classList.remove('toggled');
        this.attachmentsButton.classList.add('toggled');
-       this.thumbnailView.classList.add('hidden');
+       this.thumbnailView.classList.add('content_co');
        this.outlineView.classList.add('hidden');
        this.attachmentsView.classList.remove('hidden');
        break;
@@ -3054,6 +3054,7 @@ var pdfjsWebLibs;
       });
       items.presentationModeButton.addEventListener('click', function (e) {
        eventBus.dispatch('presentationmode');
+       console.log("11");
       });
       items.openFile.addEventListener('click', function (e) {
        eventBus.dispatch('openfile');
@@ -6565,7 +6566,7 @@ var pdfjsWebLibs;
     }
     if (!PDFViewerApplication.supportsFullscreen) {
      appConfig.toolbar.presentationModeButton.classList.add('hidden');
-     appConfig.secondaryToolbar.presentationModeButton.classList.add('hidden');
+//   appConfig.secondaryToolbar.presentationModeButton.classList.add('hidden');
     }
     if (PDFViewerApplication.supportsIntegratedFind) {
      appConfig.toolbar.viewFind.classList.add('hidden');

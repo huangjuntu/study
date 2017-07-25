@@ -112,34 +112,50 @@ $(function() {
 	var screen_height = window.screen.height;
 	console.log(screen_height);
 	
-	var iframe_pdf_height = screen_height * 0.50;
-	var container_height = screen_height * 0.50;
+	var iframe_pdf_height = screen_height * 0.4;
+	var header_tab_height = screen_height * 0.06;
+	var container_height = screen_height * 0.54;
+	
+	
 	$("#content_big #header .iframe_pdf").css("height", iframe_pdf_height);
 	$("#content_big .course-container").css("height", container_height);
-	$("#content_big .course-container").css("margin-top", iframe_pdf_height);
+	$("#content_big .course-container").css("margin-top", iframe_pdf_height+header_tab_height);
+
+	$("#content_big #header .tab").css({"height":header_tab_height,"line-height":header_tab_height-2+"px"});
+	
 	
 	console.log("header的height为:"+$("#header").outerHeight());
+	console.log("iframe_pdf的height为:"+$(".iframe_pdf").outerHeight());
+	console.log("header_tab的height为:"+$("#header .tab").outerHeight());
 	console.log("course-container的height为:"+$(".course-container").outerHeight());
 	
 	//点击放大缩小,pdf变换
-	var show2 = 0;
-	$(".big_small").on("click", function() {
-		if(show2 == 0) {
-			$("#header").addClass("big1");
-			$(".course-container").css("display", "none");
-			$(".iframe_pdf").css("height", "100%");
-			$("#header .tab").css("display","none");
-			$(this).html("缩小");
-			show2 = 1;
-		} else {
-			$(".course-container").css("display", "block");
-			$("#header").removeClass("big1");
-			$(".iframe_pdf").css("height", iframe_pdf_height);
-			$("#header .tab").css("display","block");
-			$(this).html("放大");
-			show2 = 0;
-		}
-	})
+//	var show2 = 0;
+//	$(".big_small").on("click", function() {
+//		if(show2 == 0) {
+//			$("#header").addClass("big1");
+//			$(".course-container").css("display", "none");
+//			$(".iframe_pdf").css("height", "100%");
+//			$("#header .tab").css("display","none");
+//			$(this).html("缩小");
+//			show2 = 1;
+//		} else {
+//			$(".course-container").css("display", "block");
+//			$("#header").removeClass("big1");
+//			$(".iframe_pdf").css("height", iframe_pdf_height);
+//			$("#header .tab").css("display","block");
+//			$(this).html("扩大");
+//			show2 = 0;
+//		}
+//	})
+	
+	
+	
+	
+	
+	
+	
+	
 
 	//下面的tab滑动效果动画
 	$("#content_big .tab a").on("click", function() {
