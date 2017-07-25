@@ -108,23 +108,34 @@ $(function() {
 	})
 
 	/*详细课程的页面*/
-	//点击放大缩小,pdf变换
+	//利用window.screen.height计算iframe_pdf的height和container的height的百分比，根据屏幕大小灵活调整高
 	var screen_height = window.screen.height;
-	var container_height = screen_height * 0.53;
+	console.log(screen_height);
+	
+	var iframe_pdf_height = screen_height * 0.50;
+	var container_height = screen_height * 0.50;
+	$("#content_big #header .iframe_pdf").css("height", iframe_pdf_height);
 	$("#content_big .course-container").css("height", container_height);
-
+	$("#content_big .course-container").css("margin-top", iframe_pdf_height);
+	
+	console.log("header的height为:"+$("#header").outerHeight());
+	console.log("course-container的height为:"+$(".course-container").outerHeight());
+	
+	//点击放大缩小,pdf变换
 	var show2 = 0;
 	$(".big_small").on("click", function() {
 		if(show2 == 0) {
 			$("#header").addClass("big1");
 			$(".course-container").css("display", "none");
 			$(".iframe_pdf").css("height", "100%");
+			$("#header .tab").css("display","none");
 			$(this).html("缩小");
 			show2 = 1;
 		} else {
 			$(".course-container").css("display", "block");
 			$("#header").removeClass("big1");
-			$(".iframe_pdf").css("height", "16rem");
+			$(".iframe_pdf").css("height", iframe_pdf_height);
+			$("#header .tab").css("display","block");
 			$(this).html("放大");
 			show2 = 0;
 		}
@@ -150,7 +161,7 @@ $(function() {
 	//点击下面的章节,对应上面的显示互换
 	$(".tabbox li").on("click", function() {
 		$(".tabbox li").each(function() {
-			$(this).css("background-color", "#F0F0F0");
+			$(this).css("background-color", "#fff");
 		})
 		$(this).css("background-color", "pink");
 
@@ -161,5 +172,9 @@ $(function() {
 			"display": "none"
 		});
 	})
+	
+	$(".tabbox li a").prepend("<span>></span>");
+	
+//	学完之后后变为红色
 
 })
