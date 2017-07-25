@@ -138,6 +138,6 @@ em{font-style: normal;}
 #content_big .course-container .tabbox_zj li{list-style: none; height: 2.2rem; line-height:2.2rem; padding-left: 0.2rem; margin-bottom: .8rem; background: #fff; color: #71777d; box-shadow: 0 0.05rem 0.2rem 0.05rem #e0e3e6; border-radius: 0.25rem; display: block;}
 #content_big .course-container .tabbox_zj li span{font-family: 黑体; font-size: 0.1rem; width: 0.2rem; padding-right: 0.5rem;}
 #content_big .course-container .tabbox_zj li a{font-size: 0.6rem; display: block; width: 70%; height: 2.2rem; float: left; line-height: 2.2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-#content_big .course-container .tabbox_zj li .study_time{float: right; height: 2.2rem; line-height: 2.2rem; text-align: center; display: block; padding: -5rem; width: 22%; overflow: hidden;}
+#content_big .course-container .tabbox_zj li .study_time{font-size:0.6rem;float: right; height: 2.2rem; line-height: 2.2rem; text-align: center; display: block; padding: -5rem; width: 22%; overflow: hidden;}
 #content_big .course-container .tabbox .tab_intro,.tab_comment,.tab_message{background: #fff; margin-left: 0 1rem; margin: 0 1rem; line-height: 1.9rem; font-size: 1.1rem;}
 
