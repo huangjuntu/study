@@ -2055,7 +2055,7 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
 .visibleLargeView,
 .visibleMediumView,
 .visibleSmallView {
-  display: none;
+  display: block;
 }
 
 @media all and (max-width: 1040px) {
